@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="./files/css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header id="dark">
+        <nav>
+            <span>Nicholas Darko Brown</span>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li id="contact-btn"><a href="contact.html">Contact</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="banner">
+            <div class="title-container">
+                <h1>Hi, <br>I'm Nicholas <br>Frontend Engineer</h1>
+
+                <button><a href="contact.html"> Contact</a></button>
+            </div>
+
+            <div class="photo-container">
+                <img src="./files/images/two.jpg" class="photo" alt="photo">
+            </div>
+        </div>
+    </header>
+
+
+    <section class="about">
+        <h2>ABOUT ME</h2>
+        <div class="about-wrapper">
+            <div class="about-container">
+                <img src="./files/images/one.jpg" class="photo2" alt="photo2">
+            </div>
+
+            <div class="about-description">
+                <h3>I'm Nicholas</h3>
+                    <p> Over the years, I have built up a diverse range of skills I believe are 
+                    a match for my job description. I am dependable and loyal when it comes
+                    to my work. I am happy working independently as well as working in a team
+                    as I also possess strong team playing skills.
+                    Resourceful and well organized with good leadership and team building 
+                    abilities. Always meet client deadline and execute tasks to almost 
+                    perfection and on time. Hard worker, goal-getter and great communication 
+                    skills.
+                    </p>
+                    <button><a href="projects.html"> Projects </a></button>
+            </div>
+        </div>    
+    </section> 
+
+
+
+    <div class="skills">
+        <h2>SKILLS</h2>
+        <span>
+            <img src="./files/images/icons8-html-5-50.png" alt="html5">
+            <img src="./files/images/icons8-css3-50.png" alt="css3">
+            <img src="./files/images/icons8-javascript-logo-50.png" alt="javascript">
+            <img src="./files/images/icons8-nodejs-50.png" alt="nodejs">
+            <img src="./files/images/icons8-npm-50.png" alt="npm">
+            <img src="./files/images/icons8-react-native-50.png" alt="reactjs">
+            <img src="./files/images/icons8-git-50.png" alt="git">
+        </span>
+    </div>
+
+
+    <footer>
+        <h3>Nicholas Darko Brown</h3> <br>
+        <div class="address">
+            <p>GPS-(AS-018-7430)</p>
+            <p>KS 7343 Adum-Kumasi</p>
+            <p>Tel: (+233) 501090603</p> <br>
+            <p>&copy;copyright 2021</p>
+        </div>
+    </footer>
+
+
+    <script>
+        let btn = document.getElementById("btn");
+        let dark = document.getElementById("dark");
+
+        const toggleBtn = () => {
+            btn.classList.toggle("active");
+            dark.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>
