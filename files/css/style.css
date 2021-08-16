@@ -15,12 +15,12 @@ body {
 
 header {
     background-color: #050027;
-    opacity: 0.9;
     transition: opacity 0.5s;
     min-height: 100vh;
     width: 100%;
     color: white;
     position: relative;
+    transition: background 0.7s;
 }
 
 nav {
@@ -36,6 +36,11 @@ nav span {
     margin-right: 1.25rem;
     cursor: pointer;
     font-size: 1.35rem;
+}
+
+nav span a {
+    text-decoration: none;
+    color: white;
 }
 
 nav ul {
@@ -93,6 +98,13 @@ nav button span {
     opacity: 1;
 }
 
+.hero, .foot {
+    background-color: black;
+    color: seashell;
+}
+
+
+
 
 
 .title-container{
@@ -109,8 +121,8 @@ nav button span {
 }
 
 .title-container button {
-    background: #3C3B61;
-    color: white;
+    background-color: #70bfff00;
+    color: seashell;
     padding: 0.625rem 1.25rem;
     border-radius: 0.625rem;
     border: 2px solid white;
@@ -125,7 +137,7 @@ nav button span {
 }
 
 .title-container button:hover {
-    background-color: #261e58;
+    background-color: #040114;
 }
 
 
@@ -279,7 +291,7 @@ nav button span {
 
 .skills {
     max-height: 300px;
-    background-color: #3C3B61;
+    background-color: #70bfff;
     text-align: center;
     padding: 20px 0px;
 }
@@ -294,6 +306,27 @@ nav button span {
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
+}
+
+.accordion {
+    margin-left: 15px;
+}
+
+.accordion-title {
+    font-weight: bold;
+    font-weight: 18px;
+}
+
+.accordion details a {
+    text-decoration: none;
+    color: white;
+}
+
+.accordion .github a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -390,8 +423,12 @@ textarea{
 }
 
 @media screen and (max-width: 880px){
+    .container{
+        padding: 20px 40px;
+    }
 	.contact-box{
 		grid-template-columns: 1fr;
+        font-size: 12px;
 	}
 	.left{
 		height: 200px;
@@ -400,12 +437,29 @@ textarea{
 
 
 footer {
-    background-color: #050027;
+    background: #040114;
     color: white;
     line-height: 2;
     padding: 10px;
     text-align: center;
 }
+
+footer h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .address span .personal-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+footer .address span a {
+    text-decoration: none;
+}
+
+
 
 
 
@@ -448,8 +502,19 @@ footer {
     .about-description button, .about-description button a {
         display:inherit;
     }
+    .accordion {
+        max-width: 100%;
+        line-height: 1.5;
+    }
+    .projects-wrapper {
+        display: none;
+    }
     footer, .copyright {
         text-align: center;
+    }
+    footer .address span {
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -465,17 +530,32 @@ footer {
         align-items: center;
         justify-content: center;
     }
+    .accordion {
+        display: none;
+    }
+    
 }
 @media screen and (min-width: 1024px) and (max-width: 1200px){
     body {
         width: 100%;
     }
     header {
-        min-height: 70vh;
+        min-height: 80vh;
     }
     .photo-container {
         max-width: 100%;
         margin-top: 15%;
         margin-left: 60%;
+    }
+    .accordion {
+        display: none;
+    }
+    .container {
+        height: 80vh;
+    }
+}
+@media screen and (min-width: 1201px){
+    .accordion {
+        display: none;
     }
 }
