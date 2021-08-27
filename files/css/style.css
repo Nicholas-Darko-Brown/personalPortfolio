@@ -519,6 +519,14 @@ footer .address span a {
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
+    nav {
+        padding: 0.2rem 0.9rem;
+    }
+
+    nav ul li {
+        margin: 0rem 0.3rem;
+    }
+
     #contact-btn {
         display: none;
     }
@@ -535,12 +543,20 @@ footer .address span a {
     }
     
 }
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+    .accordion {
+        display: none;
+    }
+    
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1200px){
     body {
         width: 100%;
     }
     header {
-        min-height: 80vh;
+        min-height: 100vh;
     }
     .photo-container {
         max-width: 100%;
